@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"恋愛運検査"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="quiz-container">
+        <h1> 恋愛運検査 </h1>
+        <p>あなたの名前と好きな人の名前を入力してください</p>
+        
+        <div id="input-area">
+            <label for="yourName">あなたの名前 (必須):</label>
+            <input type="text" id="yourName" required><br><br>
+            
+            <label for="crushName">好きな人の名前 (必須):</label>
+            <input type="text" id="crushName" required><br><br>
+            
+            <button onclick="startDiagnosis()">運勢をチェック！</button>
+        </div>
+
+        <div id="result-area" style="display: none;">
+            <h2>診断結果</h2>
+            <p id="final-result"></p>
+            <button onclick="window.location.reload()">もう一度診断する</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
